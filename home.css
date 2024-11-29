@@ -127,6 +127,12 @@ span {
         padding: 1rem;
     }
 
+    h1,
+    nav,
+    li a {
+        font-size: 1.1rem;
+    }
+
     .gallery {
         display: flex;
         flex-direction: column;
@@ -176,7 +182,7 @@ span {
     }
 
     .credit {
-        margin: 0 auto;
+        margin: .5rem auto;
         font-size: small;
         margin-top: 1rem;
     }
