@@ -1,7 +1,8 @@
 body {
     background-color: #fbf7f3;
     font-family: 'Cormorant Garamond', serif;
-    margin: 0 3rem;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 /* Header */
@@ -47,8 +48,9 @@ nav {
 
 article {
     display: inline-block;
-    width: 49.75%;
+    width: 48.75%;
     margin-bottom: 2.5rem;
+    margin-right: .821rem;
 }
 
 h2 {
@@ -59,8 +61,8 @@ h2 {
 }
 
 img {
-    width: 675px;
-    height: 400px;
+    width: 100%;
+    height: 370px;
     object-fit: cover;
     background-color: #8e745a;
 }
@@ -116,4 +118,62 @@ span {
 .credit a {
     text-decoration: gray dotted underline;
     color: black;
+}
+
+@media (max-width: 768px) {
+    header {
+        font-size: .8rem;
+        padding: 1rem;
+    }
+
+    .gallery {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 1rem;
+    }
+
+    article {
+        width: 100%;
+    }
+
+    footer {
+        margin: 0;
+        padding: 4rem 0 0 2rem;
+        font-size: 1.2rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    footer p {
+        width: 90%;
+    }
+
+    .cta {
+        font-size: 2rem;
+        border-bottom: 2px solid black;
+        max-width: 3.8em;
+        text-decoration: none;
+        color: black;
+    }
+
+    .cta:hover {
+        color: #fbf7f3;
+        background-color: #8e745a;
+        border: none;
+        padding: .8rem 1rem;
+        border-radius: 4px;
+        font-size: 2rem;
+    }
+
+    .cntct {
+        font-size: large;
+        margin-top: 3.5rem;
+    }
+
+    .credit {
+        align-self: flex-end;
+        font-size: small;
+    }
 }
